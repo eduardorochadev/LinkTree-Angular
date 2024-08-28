@@ -1,0 +1,83 @@
+/* Estilos para o container principal */
+.linktree-container {
+    display: flex;
+    height: calc(100vh - 100px); /* Ajusta o tamanho para deixar espaço para header e footer */
+  }
+  
+  /* Estilos para a section de links de redes sociais */
+  .social-links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  .social-links a {
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .social-links a:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para a section da fotografia */
+  .photo-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .photo-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* @media (max-width: 768px) {
+    .linktree-container {
+      flex-direction: column;
+    }
+  
+    .social-links,
+    .photo-section {
+      width: 100%;
+      height: 50vh;
+    }
+  }
+     */
+
+     @media (max-width: 768px) {
+        .linktree-container {
+          flex-direction: column-reverse; /* Muda a ordem: fotografia em cima, links embaixo */
+        }
+      
+        .social-links,
+        .photo-section {
+          width: 100%;
+          height: 50vh;
+        }
+      
+        .photo-section {
+          height: 50vh;
+        }
+      
+        .photo-section img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      

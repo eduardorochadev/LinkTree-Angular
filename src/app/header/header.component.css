@@ -1,0 +1,23 @@
+/* Container do Header */
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #ff69b4; /* Cor de fundo rosa */
+    padding: 15px 0;
+  }
+  
+  /* Estilo dos links do Header */
+  .nav-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    color: #fff0f5; /* Cor rosa clara ao passar o mouse */
+  }
+  

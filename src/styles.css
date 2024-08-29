@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #003366;          /* Cor principal (por exemplo, azul escuro) */
+  --secondary-color1: #021d2f;        /* Cor secundária (por exemplo, azul escuro2) */
+  --secondary-color2: #007ACC;        /* Cor secundária (por exemplo, azul claro) */
+  --accent-color: #CCCCCC;           /* Cor de destaque (por exemplo, cinza claro) */
+  --text-color: #000000;  
+  --text-color2:#ffffff;           /* Cor do texto principal (por exemplo, preto) */
+  --text-muted-color: #333333;       /* Cor do texto secundário (por exemplo, cinza escuro) */
+  --shadow: #274df580;
+  
+  --button-color: var(--primary-color);             /* Cor do botão padrão */
+  --button-hover-color: var(--secondary-color);     /* Cor do botão ao passar o mouse */
+  --background-color1: var(--primary-color);        /* Cor de fundo principal */
+  --background-color2: var(--accent-color);         /* Cor de fundo secundária */
+  --background-color3: var(--secondary-color1);     /* Cor de fundo secundária */
+  --box-shadow: var(--shadow);
+}
+
+  
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+  

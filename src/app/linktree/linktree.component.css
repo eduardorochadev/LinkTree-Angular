@@ -1,83 +1,62 @@
-/* Estilos para o container principal */
 .linktree-container {
-    display: flex;
-    height: calc(100vh - 100px); /* Ajusta o tamanho para deixar espaço para header e footer */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 170px); /* Deixa espaço para o header e o footer */
+  padding: 20px;
+  background-color: var(--background-color3);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-links a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 60%;
+  background-color: var(--button-color);
+  color: var(--text-color2);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px var(--box-shadow);
+}
+
+.social-links a:hover {
+  background-color: var(--button-hover-color);
+
+}
+
+.photo-section {
+  width: 50%;
+  height: 100%;
+  /* background: url('../assets/linktree.jpg') no-repeat center center; */
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--box-shadow);  
+}
+
+@media (max-width: 768px) {
+  .linktree-container {
+    flex-direction: column-reverse;
   }
-  
-  /* Estilos para a section de links de redes sociais */
-  .social-links {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f5f5;
-    padding: 20px;
-  }
-  
-  .social-links a {
-    margin: 10px 0;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: white;
-    background-color: #007bff;
-    border-radius: 5px;
-    width: 80%;
-    text-align: center;
-    font-size: 18px;
-  }
-  
-  .social-links a:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Estilos para a section da fotografia */
+
   .photo-section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    width: 50%;
+    height: 50%;
   }
-  
-  .photo-section img {
+
+  .social-links {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    align-items: center;
   }
-
-  /* @media (max-width: 768px) {
-    .linktree-container {
-      flex-direction: column;
-    }
-  
-    .social-links,
-    .photo-section {
-      width: 100%;
-      height: 50vh;
-    }
-  }
-     */
-
-     @media (max-width: 768px) {
-        .linktree-container {
-          flex-direction: column-reverse; /* Muda a ordem: fotografia em cima, links embaixo */
-        }
-      
-        .social-links,
-        .photo-section {
-          width: 100%;
-          height: 50vh;
-        }
-      
-        .photo-section {
-          height: 50vh;
-        }
-      
-        .photo-section img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-      
+}

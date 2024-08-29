@@ -1,27 +1,17 @@
-/* Container do Footer */
 .footer-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: #ff69b4; /* Cor de fundo rosa */
-    padding: 10px 0;
-  }
-  
-  /* Estilo do texto e link no Footer */
-  .footer-container p {
-    margin: 0;
-    color: white;
-    font-size: 16px;
-  }
-  
-  .footer-container a {
-    text-decoration: none;
-    color: #fff0f5; /* Cor rosa clara */
-    font-weight: bold;
-  }
-  
-  .footer-container a:hover {
-    color: white;
-  }
-  
+  background-color: var(--background-color2);
+  color: var(--text-color);
+  text-align: center;
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-container a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  color: var(--button-hover-color);
+}

@@ -1,0 +1,11 @@
+.about-me-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-me-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
